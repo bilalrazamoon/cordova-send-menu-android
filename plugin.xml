@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+           id="com.cordova.sendmenu"
+      version="1.0.0">
+    <name>WebIntent</name>
+    <description>Web intents for Cordova</description>
+    <license>MIT</license>
+    <keywords>cordova,sendmenu</keywords>
+
+    <js-module src="www/sendmenu.js" name="SendMenu">
+        <clobbers target="SendMenu" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application/activity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </config-file>
+        
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="SendMenu" >
+                <param name="android-package" value="com.cordova.sendmenu.SendMenu"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/SendMenu.java" target-dir="src/com/cordova/sendmenu" />
+    </platform>
+    <dependency id="org.apache.cordova.file"/>
+</plugin>
