@@ -50,4 +50,8 @@ Supported Platforms
         }
     );
 
+###ScreenShots
+!screenshots/device-1.jpg.gif|alt="send menu"!
+!screenshots/device-2.jpg.gif|alt="image show"!
+
 ###Copyright Bilal Raza @hafizbilal112
