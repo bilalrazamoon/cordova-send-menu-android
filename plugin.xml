@@ -31,5 +31,4 @@
 
         <source-file src="src/android/SendMenu.java" target-dir="src/com/cordova/sendmenu" />
     </platform>
-    <dependency id="org.apache.cordova.file"/>
 </plugin>

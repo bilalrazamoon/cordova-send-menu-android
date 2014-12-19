@@ -36,9 +36,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import org.apache.cordova.file.LocalFilesystemURL;
-import org.apache.cordova.file.FileUtils;
-
 public class SendMenu extends CordovaPlugin {
 
     private CallbackContext onNewIntentCallbackContext = null;
@@ -116,15 +113,8 @@ public class SendMenu extends CordovaPlugin {
                 String extraName = args.getString(0);
                 if (i.hasExtra(extraName)) {
                     Uri r = ((Uri) i.getParcelableExtra(extraName));
-                    selectedImagePath = getRealPathFromUri(this.cordova.getActivity().getApplicationContext(),r);
-                    // Get the File plugin from the plugin manager
-                    FileUtils filePlugin = (FileUtils)webView.pluginManager.getPlugin("File");
-                    // Get a LocalFilesystemURL object for a device path,
-                    // or null if it cannot be represented as a cdvfile URL.
-                    LocalFilesystemURL url = filePlugin.filesystemURLforLocalPath(selectedImagePath);
-                    // Get the string representation of the URL object
-                    String cdvfileURL = url.toString();
-                    callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, cdvfileURL));
+                    selectedImagePath = "file:///"+getRealPathFromUri(this.cordova.getActivity().getApplicationContext(),r);
+                    callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, selectedImagePath));
                     return true;
                 } else {
                     //return new PluginResult(PluginResult.Status.ERROR);
