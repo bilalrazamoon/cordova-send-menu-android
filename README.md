@@ -54,4 +54,4 @@ Supported Platforms
 ![ScreenShot](https://raw.github.com/hafizbilal112/cordova-send-menu-android/master/screenshots/device-1.png)
 ![ScreenShot](https://raw.github.com/hafizbilal112/cordova-send-menu-android/master/screenshots/device-2.png)
 
-###Copyright Bilal Raza @hafizbilal112
+###Created by Bilal Raza @hafizbilal112
