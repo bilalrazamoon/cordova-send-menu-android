@@ -10,8 +10,7 @@ Supported Platforms
 
 - Android
 
-Params
-======
+##Params
 
     sendmenu.ACTION_SEND
     sendmenu.ACTION_VIEW
@@ -51,4 +50,8 @@ Params
         }
     );
 
-###Copyright Bilal Raza
+###ScreenShots
+![ScreenShot](https://raw.github.com/hafizbilal112/cordova-send-menu-android/master/screenshots/device-1.jpg)
+![ScreenShot](https://raw.github.com/hafizbilal112/cordova-send-menu-android/master/screenshots/device-2.jpg)
+
+###Copyright Bilal Raza @hafizbilal112
