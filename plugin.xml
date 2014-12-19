@@ -7,6 +7,8 @@
     <description>Web intents for Cordova</description>
     <license>MIT</license>
     <keywords>cordova,sendmenu</keywords>
+    <repo>https://github.com/hafizbilal112/cordova-send-menu-android</repo>
+    <issue>https://github.com/hafizbilal112/cordova-send-menu-android/issues</issue>
 
     <js-module src="www/sendmenu.js" name="SendMenu">
         <clobbers target="SendMenu" />
