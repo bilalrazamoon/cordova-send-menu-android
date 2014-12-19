@@ -5,8 +5,11 @@ SendMenu
 
 > The `SendMenu` plugin to retrieve data from send menu action
 
-Supported Platforms
--------------------
+## Installation
+
+    cordova plugin add https://github.com/hafizbilal112/cordova-send-menu-android
+
+## Supported Platforms
 
 - Android
 
