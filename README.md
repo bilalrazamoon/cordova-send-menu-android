@@ -10,8 +10,7 @@ Supported Platforms
 
 - Android
 
-Params
-======
+##Params
 
     sendmenu.ACTION_SEND
     sendmenu.ACTION_VIEW
@@ -51,4 +50,4 @@ Params
         }
     );
 
-###Copyright Bilal Raza
+###Copyright Bilal Raza @hafizbilal112
