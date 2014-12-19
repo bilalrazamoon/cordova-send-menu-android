@@ -3,7 +3,7 @@
 SendMenu
 ========
 
-> The `SendMenu` plugin to retrieve data from send menu action
+The `SendMenu` plugin to receiving data from Other Apps via send menu.
 
 ## Installation
 
